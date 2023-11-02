@@ -36,6 +36,20 @@ void Engine::Update()
 
 void Engine::Events()
 {
+  SDL_Event event;
+  SDL_PollEvent(&event);
+
+  switch (event.type)
+  {
+  case SDL_QUIT:
+    Quit();
+    break;
+  }
+}
+
+void Engine::Quit()
+{
+  m_IsRunning = false;
 }
 
 void Engine::Render()
