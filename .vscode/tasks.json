@@ -13,6 +13,7 @@
         "${workspaceFolder}/src/main.cpp",
         "${workspaceFolder}/src/glad.c",
         "${workspaceFolder}/src/core/Engine.cpp",
+        "${workspaceFolder}/src/core/TextureManager.cpp",
         "-lmingw32",
         "-lSDL2main",
         "-lSDL2_image",
